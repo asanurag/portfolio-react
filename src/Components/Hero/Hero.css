@@ -1,0 +1,115 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.hero-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #ff00ff;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    text-align: center;
+    width: 60%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero h1 span {
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    width: 60%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.hero-action {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.hero-connect {
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    cursor: pointer;
+}
+
+.hero-resume {
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+}
+
+.hero-resume a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero-connect:hover {
+    border: 2px solid white;
+}
+
+.hero-resume:hover {
+    border-color: #B415FF
+}
+
+@media (max-width: 768px) {
+    .hero-img {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 3px solid #ff00ff;
+    }
+    .hero h1 {
+        font-size: 40px;
+        margin-top: 20px;
+        width: 90%;
+    }
+    .hero p {
+        font-size: 18px;
+        width: 60%;
+        line-height: 32px;
+        margin: 10px 0px;
+    }
+    .hero-action {
+        font-size: 18px;
+        gap: 16px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hero-connect {
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+    .hero-resume {
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
+}
